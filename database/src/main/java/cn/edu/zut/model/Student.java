@@ -23,4 +23,11 @@ public class Student {
     public void setsex(String sex) {
         this.sex = sex;
     }
+    public float getGrade() {
+        return grade;
+    }
+    public void setGrade(float grade) {
+        this.grade = grade;
+    }
+
 }

@@ -12,15 +12,15 @@ import java.util.List;
  * Created by irene on 2019/3/25.
  */
 @Service
-public class SaleService {
+public class Get {
 
     StudentDAO StudentDAO;
-    public void onSale(float sale) {
+    public void Get(float get) {
         List<Student> Students = StudentDAO.queryAll();
         for(Student b : Students) {
-            b.setPrice(b.getPrice()*sale);
+            b.setGrade(b.getGrade()*sale);
             System.out.println(b.getPrice());
-            bookDAO.modifyBook(b);
+            StudentDAO.modifyBook(b);
 
         }
     }
