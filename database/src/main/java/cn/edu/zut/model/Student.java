@@ -4,7 +4,7 @@ public class Student {
     private String id;
     private String name;
     private String sex;
-    private float grade;
+    private int grade;
     public String getId() {
         return id;
     }
@@ -23,10 +23,10 @@ public class Student {
     public void setsex(String sex) {
         this.sex = sex;
     }
-    public float getGrade() {
+    public int getGrade() {
         return grade;
     }
-    public void setGrade(float grade) {
+    public void setGrade(int grade) {
         this.grade = grade;
     }
 
