@@ -14,7 +14,7 @@ import java.util.List;
 @Service
 public class Get {
 
-    StudentDAO StudentDAO;
+     StudentDAO StudentDAO;
     public void Get(float get) {
         List<Student> Students = StudentDAO.queryAll();
         for(Student b : Students) {
