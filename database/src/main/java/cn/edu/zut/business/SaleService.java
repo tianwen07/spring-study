@@ -1,7 +1,7 @@
 package cn.edu.zut.business;
 
-import cn.edu.zut.DAO.BookDAO;
-import cn.edu.zut.model.Book;
+import cn.edu.zut.DAO.StudentDAO;
+import cn.edu.zut.model.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -16,8 +16,8 @@ public class SaleService {
 
     StudentDAO StudentDAO;
     public void onSale(float sale) {
-        List<Student> books = bookDAO.queryAll();
-        for(Book b : books) {
+        List<Student> Students = StudentDAO.queryAll();
+        for(Student b : Students) {
             b.setPrice(b.getPrice()*sale);
             System.out.println(b.getPrice());
             bookDAO.modifyBook(b);
